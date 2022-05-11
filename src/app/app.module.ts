@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 // Import pdfmake-wrapper and the fonts to use
 import { PdfMakeWrapper } from 'pdfmake-wrapper';
 import * as pdfFonts from "pdfmake/build/vfs_fonts"; // fonts provided for pdfmake
+import { HomeModule } from './Pages/home/home.module';
 
 // If any issue using previous fonts import. you can try this:
 // import pdfFonts from "pdfmake/build/vfs_fonts";
@@ -20,6 +21,7 @@ PdfMakeWrapper.setFonts(pdfFonts);
   ],
   imports: [
     BrowserModule,
+    HomeModule,
     AppRoutingModule
   ],
   providers: [],
