@@ -22,3 +22,13 @@
     color: white;
     font-family: 'Cinzel', serif;
 }
+
+@media screen and (max-width: 800px) {
+    .letra {
+        font-size: 100px;
+        text-align: center;
+        margin-top: 200px;
+        color: white;
+        font-family: 'Cinzel', serif;
+    }
+}
