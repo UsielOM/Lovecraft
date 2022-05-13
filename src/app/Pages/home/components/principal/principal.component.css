@@ -1,6 +1,24 @@
-.tam {
-    width: 2000px;
-    margin-left: -50px;
-    background-color: black;
-    /* max-height: fit-content; */
+.pot {
+    margin-top: -480px;
+}
+
+.pot2 {
+    margin-top: -480px;
+}
+
+.tamaño {
+    /* height: 1500px; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.letra {
+    font-size: 200px;
+    text-align: center;
+    margin-top: -745px;
+    color: white;
+    font-family: 'Cinzel', serif;
 }
