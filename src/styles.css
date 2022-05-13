@@ -1,5 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 
 .estiloObscuro {
-    background-color:linear-gradient(top, black, white);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+body.darkmode {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(23, 158, 154, 1) 100%);
+    color: white;
 }
