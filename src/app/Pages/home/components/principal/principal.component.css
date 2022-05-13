@@ -23,52 +23,45 @@
     font-family: 'Cinzel', serif;
 }
 
+
+/* MEDIDAS DE PANTALLA  */
+
 @media screen and (max-width: 1400px) {
     .letra {
         font-size: 170px;
-        text-align: center;
         margin-top: 10px;
         color: white;
-        font-family: 'Cinzel', serif;
     }
 }
 
 @media screen and (max-width: 1200px) {
     .letra {
         font-size: 150px;
-        text-align: center;
         margin-top: 90px;
         color: black;
-        font-family: 'Cinzel', serif;
     }
 }
 
 @media screen and (max-width: 992px) {
     .letra {
         font-size: 100px;
-        text-align: center;
         margin-top: 150px;
         color: blue;
-        font-family: 'Cinzel', serif;
     }
 }
 
 @media screen and (max-width: 768px) {
     .letra {
         font-size: 100px;
-        text-align: center;
         margin-top: 200px;
         color: purple;
-        font-family: 'Cinzel', serif;
     }
 }
 
 @media screen and (max-width: 576px) {
     .letra {
         font-size: 50px;
-        text-align: center;
         margin-top: 300px;
         color: red;
-        font-family: 'Cinzel', serif;
     }
 }
