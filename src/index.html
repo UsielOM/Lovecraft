@@ -13,7 +13,36 @@
 </head>
 
 <body class="estiloObscuro">
+    <header>
+        <div class="btn-posi">
+            <button id="botonObscuro"> estiloObscuro</button>
+
+        </div>
+    </header>
     <app-root></app-root>
+    <script>
+        const botonObscuro = document.querySelector('#botonObscuro');
+        const body = document.querySelector('body');
+
+        botonObscuro.addEventListener('click', e => {
+            body.classList.toggle('darkmode');
+            store(body.classList.contains('darkmode'));
+        });
+
+        function load() {
+            const darkmode = localStorage.getItem('darkmode');
+            if (!darkmode) {
+                store('false');
+            } else if (darkmode == 'true') {
+                body.classList.add('darkmode');
+            }
+
+        }
+
+        function store(value) {
+            localStorage.setItem('darkmode', value);
+        }
+    </script>
 </body>
 
 </html>
