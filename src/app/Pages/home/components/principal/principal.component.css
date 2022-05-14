@@ -1,6 +1,67 @@
-.tam {
-    width: 2000px;
-    margin-left: -50px;
-    background-color: black;
-    /* max-height: fit-content; */
+.pot {
+    margin-top: -480px;
+}
+
+.pot2 {
+    margin-top: -480px;
+}
+
+.tamaño {
+    /* height: 1500px; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.letra {
+    font-size: 200px;
+    text-align: center;
+    margin-top: -550px;
+    color: white;
+    font-family: 'Cinzel', serif;
+}
+
+
+/* MEDIDAS DE PANTALLA  */
+
+@media screen and (max-width: 1400px) {
+    .letra {
+        font-size: 170px;
+        margin-top: 10px;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .letra {
+        font-size: 150px;
+        margin-top: 90px;
+        color: black;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .letra {
+        font-size: 100px;
+        margin-top: 150px;
+        color: blue;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .letra {
+        font-size: 100px;
+        margin-top: 200px;
+        color: purple;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .letra {
+        font-size: 50px;
+        margin-top: 300px;
+        color: red;
+    }
 }
