@@ -1,0 +1,7 @@
+.forma1 {
+    background-color: #171515;
+    width: 1905px;
+    height: 500px;
+    clip-path: polygon(0 31%, 100% 0%, 100% 100%, 0 100%);
+    /* margin-left: 0px; */
+}
