@@ -7,10 +7,42 @@
     <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@900&display=swap" rel="stylesheet">
 </head>
 
-<body class="estiloDeEjemplo">
+<body class="estiloObscuro">
+    <header>
+        <div class="btn-posi">
+            <button id="botonObscuro"> estiloObscuro</button>
+
+        </div>
+    </header>
     <app-root></app-root>
+    <script>
+        const botonObscuro = document.querySelector('#botonObscuro');
+        const body = document.querySelector('body');
+
+        botonObscuro.addEventListener('click', e => {
+            body.classList.toggle('darkmode');
+            store(body.classList.contains('darkmode'));
+        });
+
+        function load() {
+            const darkmode = localStorage.getItem('darkmode');
+            if (!darkmode) {
+                store('false');
+            } else if (darkmode == 'true') {
+                body.classList.add('darkmode');
+            }
+
+        }
+
+        function store(value) {
+            localStorage.setItem('darkmode', value);
+        }
+    </script>
 </body>
 
 </html>
