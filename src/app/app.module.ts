@@ -13,6 +13,7 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 
 // If any issue using previous fonts import. you can try this:
 // import pdfFonts from "pdfmake/build/vfs_fonts";
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // Set the fonts to use
 PdfMakeWrapper.setFonts(pdfFonts);
@@ -26,7 +27,9 @@ PdfMakeWrapper.setFonts(pdfFonts);
   imports: [
     BrowserModule,
     HomeModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

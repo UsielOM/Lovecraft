@@ -6,6 +6,8 @@ import { HomepageComponent } from './homepage.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PrincipalComponent } from './components/principal/principal.component';
 import { ConocenosComponent } from './components/conocenos/conocenos.component';
+import { FormempleadoComponent } from './components/formempleado/formempleado.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -13,11 +15,15 @@ import { ConocenosComponent } from './components/conocenos/conocenos.component';
     HomepageComponent,
     NavbarComponent,
     PrincipalComponent,
-    ConocenosComponent
+    ConocenosComponent,
+    FormempleadoComponent
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    FormsModule,
+    ReactiveFormsModule,
+    HomeRoutingModule,
+    
   ]
 })
 export class HomeModule { }
