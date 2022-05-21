@@ -14,7 +14,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // If any issue using previous fonts import. you can try this:
 // import pdfFonts from "pdfmake/build/vfs_fonts";
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // Set the fonts to use
 PdfMakeWrapper.setFonts(pdfFonts);
