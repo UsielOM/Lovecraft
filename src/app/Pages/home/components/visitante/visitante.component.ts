@@ -27,15 +27,7 @@ areaInvalid(){
 encargadoInvalid(){
   return this.form.get('encargado').invalid && this.form.get('encargado').touched
 }
-flexRadioINEInvalid(){
-  return this.form.get('flexRadioINEInvalid').invalid && this.form.get('flexRadioINEInvalid').touched
-}
-flexRadioLICENCIA(){
- return this.form.get('flexRadioLICENCIA').invalid && this.form.get('flexRadioLICENCIA').touched
-}
-flexRadioCREDENCIAL(){
- return this.form.get('flexRadioCREDENCIAL').invalid && this.form.get('flexRadioCREDENCIAL').touched
-}
+
 
 
 
