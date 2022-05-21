@@ -4,7 +4,7 @@ import { VisitanteComponent } from './Pages/home/components/visitante/visitante.
 
 const routes: Routes = [{path:'',
 loadChildren:()=> import('./Pages/home/home.module').then(m=>m.HomeModule)}
-,{path:'visitante',component:VisitanteComponent}
+
 ];
 
 @NgModule({
