@@ -7,6 +7,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { PrincipalComponent } from './components/principal/principal.component';
 import { ConocenosComponent } from './components/conocenos/conocenos.component';
 import { JumbotronComponent } from './components/jumbotron/jumbotron.component';
+import { VisitanteComponent } from './components/visitante/visitante.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -15,10 +17,13 @@ import { JumbotronComponent } from './components/jumbotron/jumbotron.component';
     NavbarComponent,
     PrincipalComponent,
     ConocenosComponent,
-    JumbotronComponent
+    JumbotronComponent,
+    VisitanteComponent
   ],
   imports: [
     CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
     HomeRoutingModule
   ]
 })

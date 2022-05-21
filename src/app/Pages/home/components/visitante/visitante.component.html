@@ -1,0 +1,80 @@
+<div class="container">
+    <div class="d-flex justify-content-center align-items-center  ">
+
+        <h1 class="fst-normal">REGISTRO VISITANTE</h1>
+
+    </div>
+
+    <div class="row">
+        <div class="col-6 bg-#117A65 justify-content-center align-items-end ">
+
+            <div class="d-flex justify-content-center align-items-center  " style="height:100%;">
+                <P>FECHAS DISPONIBLES:</P>
+                <input type="datetime-local">
+            </div>
+        </div>
+
+        <div class="col-6 bg-#909497 ">
+            <form action="user" autocomplete="off" [formGroup]="form">
+
+                <div class="input-group">
+                    <span class="input-group-text">NOMBRE(S):</span>
+                    <input type="text" class="form-control" id="nombres" name="nombres" formControlName="nombres">
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-text">APELLIDO(S):</span>
+                    <input type="text" class="form-control" id="apellidos" name="apellidos" formControlName="apellidos">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text">TELEFONO:</span>
+                    <input type="phone" class="form-control" id="telefono" name="telefono" formControlName="telefono">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text">CORREO ELECTRONICO : </span>
+                    <input type="email" class="form-control" id="email" name="email" formControlName="email">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text">AREA:</span>
+                    <input type="text" class="form-control" id="area" name="area" formControlName="area">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text">ENCARGADO:</span>
+                    <input type="text" class="form-control" id="encargado" name="encargado" formControlName="encargado">
+                </div>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">RAZON:</label>
+                    <P>IDENTIFICACION A PRESENTAR :</P>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioINE">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                      INE
+                    </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioLICENCIA" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                      LICENCIA
+                    </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioCREDENCIAL" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                      CREDENCIAL ESCOLAR
+                    </label>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-lg">GENERAR CITA </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<pre>
+    ----Estado del formulario {{form.valid}}
+    <br>
+    Status: {{form.status}}
+</pre>
+<pre>
+   {{form.value | json}}
+</pre>
