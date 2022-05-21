@@ -1,66 +1,80 @@
-<p> visitante</p>
+<div class="container">
+    <div class="d-flex justify-content-center align-items-center  ">
 
-<div class="row g-3">
-    <div class="col">
-        <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+        <h1 class="fst-normal">REGISTRO VISITANTE</h1>
+
     </div>
-    <div class="col">
-        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+
+    <div class="row">
+        <div class="col-6 bg-#117A65 justify-content-center align-items-end ">
+
+            <div class="d-flex justify-content-center align-items-center  " style="height:100%;">
+                <P>FECHAS DISPONIBLES:</P>
+                <input type="datetime-local">
+            </div>
+        </div>
+
+        <div class="col-6 bg-#909497 ">
+            <form action="user" autocomplete="off" [formGroup]="form">
+
+                <div class="input-group">
+                    <span class="input-group-text">NOMBRE(S):</span>
+                    <input type="text" class="form-control" id="nombres" name="nombres" formControlName="nombres">
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-text">APELLIDO(S):</span>
+                    <input type="text" class="form-control" id="apellidos" name="apellidos" formControlName="apellidos">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text">TELEFONO:</span>
+                    <input type="phone" class="form-control" id="telefono" name="telefono" formControlName="telefono">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text">CORREO ELECTRONICO : </span>
+                    <input type="email" class="form-control" id="email" name="email" formControlName="email">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text">AREA:</span>
+                    <input type="text" class="form-control" id="area" name="area" formControlName="area">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text">ENCARGADO:</span>
+                    <input type="text" class="form-control" id="encargado" name="encargado" formControlName="encargado">
+                </div>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">RAZON:</label>
+                    <P>IDENTIFICACION A PRESENTAR :</P>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioINE">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                      INE
+                    </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioLICENCIA" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                      LICENCIA
+                    </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioCREDENCIAL" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                      CREDENCIAL ESCOLAR
+                    </label>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-lg">GENERAR CITA </button>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
-<div class="row g-3">
-    <div class="col">
-        <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-    </div>
-    <div class="col">
-        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-    </div>
-</div>
-<form>
-    <div class="row mb-3">
-        <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-        <div class="col-sm-10">
-            <input type="email" class="form-control" id="inputEmail3">
-        </div>
-    </div>
-    <div class="row mb-3">
-        <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-        <div class="col-sm-10">
-            <input type="password" class="form-control" id="inputPassword3">
-        </div>
-    </div>
-    <fieldset class="row mb-3">
-        <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
-        <div class="col-sm-10">
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                <label class="form-check-label" for="gridRadios1">
-            First radio
-          </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                <label class="form-check-label" for="gridRadios2">
-            Second radio
-          </label>
-            </div>
-            <div class="form-check disabled">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
-                <label class="form-check-label" for="gridRadios3">
-            Third disabled radio
-          </label>
-            </div>
-        </div>
-    </fieldset>
-    <div class="row mb-3">
-        <div class="col-sm-10 offset-sm-2">
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck1">
-                <label class="form-check-label" for="gridCheck1">
-            Example checkbox
-          </label>
-            </div>
-        </div>
-    </div>
-    <button type="submit" class="btn btn-primary">Sign in</button>
-</form>
+<pre>
+    ----Estado del formulario {{form.valid}}
+    <br>
+    Status: {{form.status}}
+</pre>
+<pre>
+   {{form.value | json}}
+</pre>

@@ -8,6 +8,7 @@ import { PrincipalComponent } from './components/principal/principal.component';
 import { ConocenosComponent } from './components/conocenos/conocenos.component';
 import { JumbotronComponent } from './components/jumbotron/jumbotron.component';
 import { VisitanteComponent } from './components/visitante/visitante.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -21,6 +22,8 @@ import { VisitanteComponent } from './components/visitante/visitante.component';
   ],
   imports: [
     CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
     HomeRoutingModule
   ]
 })
