@@ -18,50 +18,50 @@
             <form action="user" autocomplete="off" [formGroup]="form">
                 <div class="input-group">
                     <span class="input-group-text">NOMBRE(S):</span>
-                    <input type="text" class="form-control" id="nombres" name="nombres" formControlName="nombres">
+                    <input type="text" class="form-control" id="nombres" name="nombres" formControlName="nombres" [class.is.invalid]="nombresInvalid">
                 </div>
 
                 <div class="input-group">
                     <span class="input-group-text">APELLIDO(S):</span>
-                    <input type="text" class="form-control" id="apellidos" name="apellidos" formControlName="apellidos">
+                    <input type="text" class="form-control" id="apellidos" name="apellidos" formControlName="apellidos" [class.is.invalid]="apellidosInvalid">
                 </div>
                 <div class="input-group">
                     <span class="input-group-text">TELEFONO:</span>
-                    <input type="phone" class="form-control" id="telefono" name="telefono" formControlName="telefono">
+                    <input type="phone" class="form-control" id="telefono" name="telefono" formControlName="telefono" [class.is.invalid]="telefonoInvalid">
                 </div>
                 <div class="input-group">
                     <span class="input-group-text">CORREO ELECTRONICO : </span>
-                    <input type="email" class="form-control" id="email" name="email" formControlName="email">
+                    <input type="email" class="form-control" id="email" name="email" formControlName="email" [class.is.invalid]="emailInvalid">
                 </div>
                 <div class="input-group">
                     <span class="input-group-text">AREA:</span>
-                    <input type="text" class="form-control" id="area" name="area" formControlName="area">
+                    <input type="text" class="form-control" id="area" name="area" formControlName="area" [class.is.invalid]="areaInvalid">
                 </div>
                 <div class="input-group">
                     <!-- <span class="input-group-text">ENCARGADO:</span> -->
-                    <input type="text" class="form-control" id="encargado" name="encargado" formControlName="encargado">
+                    <input type="text" class="form-control" id="encargado" name="encargado" formControlName="encargado" [class.is.invalid]="encargadoInvalid">
                 </div>
 
                 <div class="">
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioINE">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioINE" [class.is.invalid]="flexRadioINEInvalid">
                         <label class="form-check-label" for="flexRadioDefault1">
                       INE
                     </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioLICENCIA" checked>
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioLICENCIA" [class.is.invalid]="flexRadioLICENCIA" checked>
                         <label class="form-check-label" for="flexRadioDefault2">
                       LICENCIA
                     </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioCREDENCIAL" checked>
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioCREDENCIAL" [class.is.invalid]="flexRadioCREDENCIAL" checked>
                         <label class="form-check-label" for="flexRadioDefault2">
                       CREDENCIAL ESCOLAR
                     </label>
                     </div>
-                    <button type="button" class="btn btn-primary btn-lg">GENERAR CITA </button>
+                    <button type="button" class="btn btn-primary btn-lg" id="guardar">GENERAR CITA </button>
                 </div>
             </form>
         </div>

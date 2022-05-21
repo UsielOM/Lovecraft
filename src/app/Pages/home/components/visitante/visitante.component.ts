@@ -9,7 +9,37 @@ import { FormBuilder, Validators } from '@angular/forms';
 })
 export class VisitanteComponent implements OnInit {
   form:any;
-  
+  nombresInvalid(){
+   return this.form.get('nombres').invalid && this.form.get('nombres').touched
+  }
+  apellidosInvalid(){
+   return  this.form.get('apellidos').invalid && this.form.get('apellidos').touched
+  }
+  telefonoInvalid(){
+   return this.form.get('telefono').invalid && this.form.get('telefono').touched
+  }
+emailInvalid(){
+  return this.form.get('email').invalid && this.form.get('email').touched
+}
+areaInvalid(){
+  return this.form.get('area').invalid && this.form.get('area').touched
+}
+encargadoInvalid(){
+  return this.form.get('encargado').invalid && this.form.get('encargado').touched
+}
+flexRadioINEInvalid(){
+  return this.form.get('flexRadioINEInvalid').invalid && this.form.get('flexRadioINEInvalid').touched
+}
+flexRadioLICENCIA(){
+ return this.form.get('flexRadioLICENCIA').invalid && this.form.get('flexRadioLICENCIA').touched
+}
+flexRadioCREDENCIAL(){
+ return this.form.get('flexRadioCREDENCIAL').invalid && this.form.get('flexRadioCREDENCIAL').touched
+}
+
+
+
+
 
   constructor(private fb:FormBuilder ) {
     this.formulario();
@@ -27,4 +57,14 @@ export class VisitanteComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  guardar(){
+    console.log(this.form);
+    if(this.form.invalid)
+    {
+      return Object.values(this.form.controls).forEach(control => {
+        this.form.markAllAsTouched();
+        
+      });
+  }
+}
 }
