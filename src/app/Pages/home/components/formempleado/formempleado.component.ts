@@ -27,8 +27,13 @@ export class FormempleadoComponent implements OnInit {
       id:['', Validators.required],
       password: ['', Validators.required],
     })  
-
   }
-
+  save(){
+    console.log(this.form);
+    if(this.form.invalid){
+      return Object.values(this.form.controls).forEach(control =>{
+        this.form.markAllAsTouched();
+      })
+    
 }
-
+  }}
