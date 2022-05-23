@@ -1,5 +1,5 @@
 <div class="container p-5">
-    <form [formGroup]="form" autocomplete="off">
+    <form [formGroup]="form" autocomplete="off" (ngSubmit)="save()">
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">ID</label>
             <input type="text" class="form-control" id="id" name="id" aria-describedby="idHelp" formControlName="id" [class.is-invalid]="idInvalid()">
