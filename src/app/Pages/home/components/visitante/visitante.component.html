@@ -18,20 +18,20 @@
             <form action="user" autocomplete="off" [formGroup]="form">
                 <div class="input-group">
                     <span class="input-group-text">NOMBRE(S):</span>
-                    <input type="text" class="form-control" id="nombres" name="nombres" formControlName="nombres" [class.is.invalid]="nombresInvalid">
+                    <input type="text" class="form-control" id="nombres" name="nombres" formControlName="nombres" [class.is-invalid]="nombresInvalid()">
                 </div>
 
                 <div class="input-group">
                     <span class="input-group-text">APELLIDO(S):</span>
-                    <input type="text" class="form-control" id="apellidos" name="apellidos" formControlName="apellidos" [class.is.invalid]="apellidosInvalid">
+                    <input type="text" class="form-control" id="apellidos" name="apellidos" formControlName="apellidos" [class.is-invalid]="apellidosInvalid()">
                 </div>
                 <div class="input-group">
                     <span class="input-group-text">TELEFONO:</span>
-                    <input type="phone" class="form-control" id="telefono" name="telefono" formControlName="telefono" [class.is.invalid]="telefonoInvalid">
+                    <input type="phone" class="form-control" id="telefono" name="telefono" formControlName="telefono" [class.is-invalid]="telefonoInvalid()">
                 </div>
                 <div class="input-group">
                     <span class="input-group-text">CORREO ELECTRONICO : </span>
-                    <input type="email" class="form-control" id="email" name="email" formControlName="email" [class.is.invalid]="emailInvalid">
+                    <input type="email" class="form-control" id="email" name="email" formControlName="email" [class.is-invalid]="emailInvalid()">
                 </div>
                 <div class="input-group">
                     <span class="input-group-text">AREA:</span>
@@ -39,7 +39,7 @@
                 </div>
                 <div class="input-group">
                     <!-- <span class="input-group-text">ENCARGADO:</span> -->
-                    <input type="text" class="form-control" id="encargado" name="encargado" formControlName="encargado" [class.is.invalid]="encargadoInvalid">
+                    <input type="text" class="form-control" id="encargado" name="encargado" formControlName="encargado" [class.is-invalid]="encargadoInvalid()">
                 </div>
 
                 <div class="">

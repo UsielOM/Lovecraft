@@ -30,8 +30,6 @@ encargadoInvalid(){
 
 
 
-
-
   constructor(private fb:FormBuilder ) {
     this.formulario();
    }
