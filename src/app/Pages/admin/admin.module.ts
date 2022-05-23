@@ -9,9 +9,10 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
-    AdminpageComponent,
+  
     CitasComponent,
-    NavbarComponent
+    NavbarComponent,
+    AdminpageComponent
   ],
   imports: [
     CommonModule,
