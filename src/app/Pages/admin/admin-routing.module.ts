@@ -8,7 +8,7 @@ const routes: Routes = [
   {path:'', component:AdminpageComponent,
 children:[
   {path:'citas',component:CitasComponent },
-  {path:'administracion',component:AdministracionComponent}
+  {path:'',component:AdministracionComponent}
 ]
 }
 ];
