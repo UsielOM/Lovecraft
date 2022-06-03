@@ -11,7 +11,7 @@ const routes: Routes = [
 children:[
   
   {path:'', component:PrincipalComponent},
-
+  
   {path:'visitante',component:VisitanteComponent},
   {path:'formempleado',component:FormempleadoComponent}
   
