@@ -1,0 +1,29 @@
+.forma1 {
+    background-color: #171515;
+    width: 1905px;
+    height: 500px;
+    clip-path: polygon(0 31%, 100% 0%, 100% 100%, 0 100%);
+    /* margin-left: 0px; */
+}
+
+.tabla {
+    /* margin-top: 0px; */
+    padding-top: 100px;
+    margin-left: 550px;
+    margin-top: -110px;
+}
+
+.img-Cthulhu2 {
+    height: 350px;
+    width: 350px;
+    margin-left: -200px;
+    transform: scaleX(-1);
+    margin-top: -25px;
+}
+
+.texto-jumbo {
+    font-family: 'Cinzel', serif;
+    font-size: 70px;
+    color: aliceblue;
+    margin-left: -250px;
+}
